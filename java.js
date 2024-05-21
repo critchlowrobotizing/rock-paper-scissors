@@ -24,4 +24,48 @@ computerOptions[(Math.floor(Math.random()* computerOptions.length))]
 function getComputerChoice(){
 return computerChoice;
 };
+console.log(getComputerChoice())
 
+// Step 3: Write the logic to get the human choice
+// Your game will be played by a human player. You will write a function 
+// that takes the user choice and returns it.
+
+// 1. Create a new function named getHumanChoice.
+// 2. Write the code so that getHumanChoice will return one of the valid choices depending on what the user inputs.
+//          Hint: Use the prompt method to get the user’s input.
+// 3. Test what your function returns by using console.log.
+
+// Declare an array with the options of rock, paper, or scissors
+const humanOptions = ["rock", "paper", "scissors"];
+// Declare a variable that will store users answer
+let humanChoice = prompt('rock, paper or scissors? ... shoot on three')
+function getHumanChoice(){
+    // if humanChoice is rock paper or scissors
+    // proceed and run the rest of the code
+    // else alert "that is not an acceptable move in rock paper scissors"
+    
+    // rest of code:
+    // rock
+    // if humanChoice is rock && computerChoice is scissors...print "you Win"
+    // else if
+    // humanchoice is rock && computerChoice is paper...print "you lose"
+    // else if 
+    // // humanchoice is rock && computerChoice is rock...rerun print "Tie... try again"
+    // 
+     // paper
+    // if humanChoice is paper && computerChoice is scissors...print "you lose"
+    // else if
+    // humanchoice is paper && computerChoice is paper...print "Tie... try again"
+    // else if 
+    // // humanchoice is paper && computerChoice is rock...rerun print "you Win"
+    // 
+     // scissors
+    // if humanChoice is scissors && computerChoice is scissors...print "Tie... try again"
+    // else if
+    // humanchoice is scissors && computerChoice is paper...print "you Win"
+    // else if 
+    // // humanchoice is scissors && computerChoice is rock...rerun print "you lose"
+    // 
+    return humanChoice
+}
+console.log(getHumanChoice())
